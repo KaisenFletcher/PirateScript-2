@@ -1,6 +1,18 @@
 
-function piratize(input){
+function piratize(input) {
 
-    // add you code in here
-    
-} 
+    const arr = input.split(' ')
+    return arr
+      .map((word) => {
+        return word.match(/[A-z]/i)
+          ? `${word.substr(1)}${word.substr(0, 1)}arr`
+          : word
+       
+      })
+
+      .join(' ')
+
+      
+
+  }
+  
